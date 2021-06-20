@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Registration"></activity>
+        <activity android:name=".Delivery_Registration"></activity>
+        <activity android:name=".Delivery_LoginPhone" />
+        <activity android:name=".Delivery_Login" />
+        <activity android:name=".Registration" />
         <activity android:name=".LoginPhone" />
         <activity android:name=".Login" />
         <activity android:name=".ChefRegistration" />
