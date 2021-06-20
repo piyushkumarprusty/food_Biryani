@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1072267800442",
+    "project_id": "kibiryani-6129c",
+    "storage_bucket": "kibiryani-6129c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1072267800442:android:8272d63ef7ce5b2144f0c3",
+        "android_client_info": {
+          "package_name": "com.example.android.kibirayni"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1072267800442-9lhie0cd2is07tt7367jckb6oommn3jb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBp-O8kG6ziE64WnHPUYvK59xoPJTtbFc8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1072267800442-9lhie0cd2is07tt7367jckb6oommn3jb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
