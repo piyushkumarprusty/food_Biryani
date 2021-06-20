@@ -63,16 +63,39 @@ public class ChooseOne extends AppCompatActivity {
                     finish();
                 }
                  if(type.equals("Phone")){
-                    Intent loginemail = new Intent(ChooseOne.this ,ChefLoginPhone.class);
-                    startActivity(loginemail);
+                    Intent loginphone = new Intent(ChooseOne.this ,ChefLoginPhone.class);
+                    startActivity(loginphone);
                     finish();
                 }
                 if (type.equals("SignUp")) {
-                    Intent loginemail = new Intent(ChooseOne.this, ChefRegistration.class);
-                    startActivity(loginemail);
+                    Intent Register = new Intent(ChooseOne.this, ChefRegistration.class);
+                    startActivity(Register);
                     finish();
                 }
 
+            }
+        });
+
+        Customer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (type.equals("Email")) {
+                    Intent loginemailcust = new Intent(ChooseOne.this, Login.class);
+                    startActivity(loginemailcust);
+                    finish();
+                }
+                if (type.equals("Phone")) {
+                    Intent loginphonecust = new Intent(ChooseOne.this, LoginPhone.class);
+                    startActivity(loginphonecust);
+                    finish();
+                }
+                if (type.equals("SignUp")) {
+                    Intent Registercust = new Intent(ChooseOne.this, Registration.class);
+                    startActivity(Registercust);
+                    finish();
+
+                }
             }
         });
     }
