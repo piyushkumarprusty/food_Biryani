@@ -7,6 +7,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
+import android.view.View;
 import android.view.animation.Animation;
 import android.widget.Button;
 
@@ -39,5 +40,40 @@ public class ChooseOne extends AppCompatActivity {
         animationDrawable.setEnterFadeDuration(850);
         animationDrawable.setExitFadeDuration(1600);
 
+        bgimage = findViewById(R.id.back3);
+        bgimage.setBackgroundDrawable(animationDrawable);
+        animationDrawable.start();
+
+        intent = getIntent();
+        type = intent.getStringExtra("Home").toString().trim();
+
+        Chef = (Button) findViewById(R.id.chef);
+        DeliveryPerson = (Button) findViewById(R.id.deliveryPerson);
+        Customer = (Button) findViewById(R.id.customer);
+
+
+        /* SETTING FUNCTIONALITY TO BUTTON */
+
+        Chef.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(type.equals("Email")){
+                    Intent loginemail = new Intent(ChooseOne.this ,ChefLogin.class);
+                    startActivity(loginemail);
+                    finish();
+                }
+                 if(type.equals("Phone")){
+                    Intent loginemail = new Intent(ChooseOne.this ,ChefLoginPhone.class);
+                    startActivity(loginemail);
+                    finish();
+                }
+                if (type.equals("SignUp")) {
+                    Intent loginemail = new Intent(ChooseOne.this, ChefRegistration.class);
+                    startActivity(loginemail);
+                    finish();
+                }
+
+            }
+        });
     }
 }

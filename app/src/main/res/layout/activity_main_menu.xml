@@ -117,7 +117,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="15dp"
-            android:layout_marginBottom="4dp"
+            android:layout_marginBottom="2dp"
             android:background="@drawable/botton_shape"
             android:text="Signup"
             android:textColor="#F6F2F2" />
