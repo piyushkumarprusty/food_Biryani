@@ -27,6 +27,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="9dp"
+            android:layout_marginEnd="9dp"
             android:orientation="vertical">
 
             <com.google.android.material.textfield.TextInputLayout
@@ -195,17 +197,17 @@
             <Button
                 android:id="@+id/Signupp"
                 android:layout_width="match_parent"
-                android:layout_height="20dp"
+                android:layout_height="35dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/botton_shape"
-                android:text="Button"
+                android:text="Register"
                 android:textAllCaps="true"
                 android:textColor="#FFFEFE"
                 android:textSize="20sp" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
                 android:orientation="horizontal">
@@ -213,21 +215,73 @@
                 <TableRow
                     android:id="@+id/hr"
                     android:layout_width="105dp"
-                    android:layout_height="1dp">
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#707070">
 
                 </TableRow>
 
                 <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:id="@+id/OP"
+                    android:layout_width="44dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="7dp"
+                    android:text="OR"
+                    android:textAlignment="center"
+                    android:textColor="#101010"
+                    android:textSize="17sp" />
 
                 <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" >
+                    android:id="@+id/dr"
+                    android:layout_width="105dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#707070">
 
                 </TableRow>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="SignIn with"
+                android:textAlignment="center"
+                android:textColor="#101010"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/email"
+                    android:layout_width="95dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1dp"
+                    android:background="@drawable/btnred"
+                    android:drawableLeft="@drawable/whitemail"
+                    android:padding="10dp"
+                    android:text="Email"
+                    android:textColor="#F8F8F8" />
+
+                <Button
+                    android:id="@+id/phone"
+                    android:layout_width="95dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1dp"
+                    android:padding="10dp"
+                    android:text="Button"
+                    android:textColor="#F8F8F8" />
             </LinearLayout>
 
 
