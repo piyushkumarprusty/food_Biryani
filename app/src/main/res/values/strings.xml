@@ -5,8 +5,7 @@
     <string name="title_notifications">Notifications</string>
 
     <string-array name="State">
-        <item>Maharashtra</item>
-        <item>Gujarat</item>
+        <item>Odisha</item>
     </string-array>
 
     <string-array name="shipper">
