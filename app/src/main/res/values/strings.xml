@@ -7,6 +7,11 @@
     <string-array name="State">
         <item>Odisha</item>
     </string-array>
+    <string-array name="City">
+        <item>Balasore</item>
+        <item>Puri</item>
+        <item>Bhubaneswar</item>
+    </string-array>
 
     <string-array name="shipper">
         <item>Shipper 1</item>
