@@ -72,7 +72,7 @@
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
             android:orientation="horizontal">
 
             <TableRow
@@ -106,7 +106,7 @@
         </LinearLayout>
 
         <TextView
-            android:id="@+id/tvv"
+            android:id="@+id/signphone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"

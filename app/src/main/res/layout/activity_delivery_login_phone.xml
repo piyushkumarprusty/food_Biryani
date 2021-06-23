@@ -39,19 +39,19 @@
             android:orientation="horizontal">
 
             <com.hbb20.CountryCodePicker
-                android:id="@+id/CountryCode"
+                android:id="@+id/countrycode"
                 android:layout_width="120dp"
                 android:layout_height="match_parent" />
 
             <EditText
-                android:id="@+id/number"
+                android:id="@+id/Dphonenumber"
                 android:layout_width="132dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp" />
         </LinearLayout>
 
         <Button
-            android:id="@+id/otp"
+            android:id="@+id/Sendotp"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginTop="20dp"
@@ -61,7 +61,7 @@
             android:textSize="18sp" />
 
         <TextView
-            android:id="@+id/acsignup"
+            android:id="@+id/Signupif"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -74,7 +74,7 @@
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
             android:orientation="horizontal">
 
             <TableRow
@@ -108,7 +108,7 @@
         </LinearLayout>
 
         <TextView
-            android:id="@+id/tvv"
+            android:id="@+id/signphone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
@@ -120,7 +120,7 @@
 
 
         <Button
-            android:id="@+id/btnEmail"
+            android:id="@+id/DbtnEmail"
             android:layout_width="105dp"
             android:layout_height="40dp"
             android:layout_gravity="center"
@@ -131,10 +131,6 @@
             android:padding="10dp"
             android:text="Email"
             android:textColor="#F8F8F8" />
-
-
-
-
 
     </LinearLayout>
 
