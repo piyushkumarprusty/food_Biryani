@@ -30,7 +30,7 @@
 
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/firstname"
+                android:id="@+id/Fname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp">
@@ -41,8 +41,9 @@
                     android:hint="First Name"
                     android:inputType="text" />
             </com.google.android.material.textfield.TextInputLayout>
+
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/Lastname"
+                android:id="@+id/Lname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp">
@@ -54,8 +55,9 @@
                     android:hint="Last Name"
                     android:inputType="text" />
             </com.google.android.material.textfield.TextInputLayout>
+
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/Email"
+                android:id="@+id/Emailid"
                 android:layout_width="match_parent"
 
                 android:layout_height="wrap_content"
@@ -70,8 +72,9 @@
                     android:hint="Email Id"
                     android:inputType="textEmailAddress" />
             </com.google.android.material.textfield.TextInputLayout>
+
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/Pwd"
+                android:id="@+id/Password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="11dp"
@@ -83,8 +86,9 @@
                     android:hint="Password"
                     android:inputType="text|textPassword" />
             </com.google.android.material.textfield.TextInputLayout>
+
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/Cpass"
+                android:id="@+id/Confirmpass"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:passwordToggleEnabled="true">
@@ -95,6 +99,7 @@
                     android:hint="Confirm Password"
                     android:inputType="textPassword" />
             </com.google.android.material.textfield.TextInputLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -108,7 +113,7 @@
                     android:layout_marginTop="11dp" />
 
                 <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/Mobileno"
+                    android:id="@+id/Mobilenumber"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
@@ -118,21 +123,23 @@
                         android:hint="Mobile Number"
                         android:inputType="number" />
                 </com.google.android.material.textfield.TextInputLayout>
-
-
             </LinearLayout>
+
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/houseNo"
+                android:id="@+id/Localaddress"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:errorEnabled="true"
                 android:layout_marginTop="11dp">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="House/ Street no"
-                    android:inputType="text" />
+                    android:hint="Local Address"
+                    android:inputType="textMultiLine" />
             </com.google.android.material.textfield.TextInputLayout>
+
+
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/Area"
                 android:layout_width="match_parent"
@@ -145,6 +152,8 @@
                     android:hint="Area"
                     android:inputType="textMultiLine|text" />
             </com.google.android.material.textfield.TextInputLayout>
+
+
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/PinCode"
                 android:layout_width="match_parent"
@@ -157,6 +166,8 @@
                     android:hint="Pin Code"
                     android:inputType="number" />
             </com.google.android.material.textfield.TextInputLayout>
+
+
             <TextView
                 android:id="@+id/txt1"
                 android:layout_width="match_parent"
@@ -185,7 +196,7 @@
                 android:layout_marginTop="5dp"
                 android:entries="@array/City" />
             <Button
-                android:id="@+id/Signupp"
+                android:id="@+id/button"
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
                 android:layout_marginTop="20dp"
