@@ -4,6 +4,70 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/pic12"
     tools:context=".ChefLoginPhone">
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="280dp"
+        android:layout_height="400dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/background_shape"
+        android:orientation="vertical"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Verify Phone Number"
+            android:textColor="#090909"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/CountryCode"
+                android:layout_width="120dp"
+                android:layout_height="match_parent" />
+
+            <EditText
+                android:id="@+id/number"
+                android:layout_width="132dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/otp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/botton_shape"
+            android:text="Send OTP"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/acsignup"
+            android:layout_marginTop="13dp"
+            android:text=" Don't Have An Account? SignUp"
+            android:textColor="@color/Black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
