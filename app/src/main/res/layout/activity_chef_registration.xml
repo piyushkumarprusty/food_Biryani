@@ -197,7 +197,7 @@
                 android:entries="@array/City" />
 
             <Button
-                android:id="@+id/Signupp"
+                android:id="@+id/Signup"
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
                 android:layout_marginTop="20dp"

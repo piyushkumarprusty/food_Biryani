@@ -30,7 +30,7 @@
 
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/Fname"
+                android:id="@+id/fname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp">
@@ -43,7 +43,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/Lname"
+                android:id="@+id/lname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp">
@@ -57,7 +57,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/Emailid"
+                android:id="@+id/EmailId"
                 android:layout_width="match_parent"
 
                 android:layout_height="wrap_content"
@@ -74,7 +74,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/Password"
+                android:id="@+id/password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="11dp"
@@ -88,7 +88,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/Confirmpass"
+                android:id="@+id/confirmpassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:passwordToggleEnabled="true">
@@ -107,13 +107,13 @@
                 android:orientation="horizontal">
 
                 <com.hbb20.CountryCodePicker
-                    android:id="@+id/CountryCode"
+                    android:id="@+id/ctrycode"
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="11dp" />
 
                 <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/Mobilenumber"
+                    android:id="@+id/mobilenumber"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
@@ -126,7 +126,7 @@
             </LinearLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/Localaddress"
+                android:id="@+id/Houseno"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:errorEnabled="true"
@@ -135,13 +135,13 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Local Address"
+                    android:hint="House/ Street no"
                     android:inputType="textMultiLine" />
             </com.google.android.material.textfield.TextInputLayout>
 
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/Area"
+                android:id="@+id/Areaa"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="11dp">
@@ -155,7 +155,7 @@
 
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/PinCode"
+                android:id="@+id/PinCodee"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="11dp">
@@ -176,7 +176,7 @@
                 android:textSize="16sp" />
 
             <Spinner
-                android:id="@+id/Statee"
+                android:id="@+id/State"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
@@ -190,13 +190,13 @@
                 android:text="City" />
 
             <Spinner
-                android:id="@+id/Citys"
+                android:id="@+id/City"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:entries="@array/City" />
             <Button
-                android:id="@+id/button"
+                android:id="@+id/Signupp"
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
                 android:layout_marginTop="20dp"
@@ -262,7 +262,7 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/email"
+                    android:id="@+id/emaillid"
                     android:layout_width="97dp"
                     android:layout_height="40dp"
                     android:layout_marginRight="20dp"
@@ -274,7 +274,7 @@
                     android:textColor="#F8F8F8" />
 
                 <Button
-                    android:id="@+id/phone"
+                    android:id="@+id/Phonenumber"
                     android:layout_width="97dp"
                     android:layout_height="40dp"
                     android:layout_marginLeft="10dp"
