@@ -60,7 +60,7 @@ public class ChefRegistration extends AppCompatActivity {
                 Object value = parent.getItemAtPosition(position);
                 statee = value.toString().trim();
 
-                if(statee.equals("Bhubaneswar")){
+                if(statee.equals("Odisha")){
                     ArrayList<String> list = new ArrayList<>();
                     for (String cities : Odisha){
                         list.add(cities);
@@ -71,6 +71,25 @@ public class ChefRegistration extends AppCompatActivity {
                 }
             }
         });
+        /* Firebase automatiocally create parent as "Chef" in which the data of chef is going to store */
 
+        databaseReference = firebaseDatabase.getInstance().getReference("Chef");
+
+        FAuth = FirebaseAuth.getInstance();
+
+        signup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                fname = Fname.getEditText().getText().toString().trim();
+                lname = Lname.getEditText().getText().toString().trim();
+                emailid = Email.getEditText().getText().toString().trim();
+                mobile = mobileno.getEditText().getText().toString().trim();
+                password = Pass.getEditText().getText().toString().trim();
+                confpassword = cpass.getEditText().getText().toString().trim();
+                Area = area.getEditText().getText().toString().trim();
+                house = houseno.getEditText().getText().toString().trim();
+                Pincode = pincode.getEditText().getText().toString().trim();
+            }
+        });
     }
 }
