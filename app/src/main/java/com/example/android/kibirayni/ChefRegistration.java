@@ -3,6 +3,9 @@ package com.example.android.kibirayni;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 
@@ -12,6 +15,8 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.hbb20.CountryCodePicker;
+
+import java.util.ArrayList;
 
 public class ChefRegistration extends AppCompatActivity {
     String[] Odisha = {"Bhubaneswar" , "Balasore" , "Cuttack" , "Puri"};
@@ -45,5 +50,27 @@ public class ChefRegistration extends AppCompatActivity {
         signup = findViewById(R.id.Signup);
         Emaill = findViewById(R.id.email);
         Phone = findViewById(R.id.phone);
+
+        Cpp= findViewById(R.id.countrycode);
+
+        Statespin.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                Object value = parent.getItemAtPosition(position);
+                statee = value.toString().trim();
+
+                if(statee.equals("Bhubaneswar")){
+                    ArrayList<String> list = new ArrayList<>();
+                    for (String cities : Odisha){
+                        list.add(cities);
+
+                    }
+                    ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(ChefRegistration.this, android.R.layout.simple_spinner_item,list);
+                    Cityspin.setAdapter(arrayAdapter);
+                }
+            }
+        });
+
     }
 }
