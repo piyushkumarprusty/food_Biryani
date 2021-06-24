@@ -41,5 +41,9 @@ public class ChefRegistration extends AppCompatActivity {
         area = findViewById(R.id.Area);
         Statespin = findViewById(R.id.Statee);
         Cityspin = findViewById(R.id.Citys);
+
+        signup = findViewById(R.id.Signup);
+        Emaill = findViewById(R.id.email);
+        Phone = findViewById(R.id.phone);
     }
 }
