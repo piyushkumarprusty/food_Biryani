@@ -92,4 +92,11 @@ public class ChefRegistration extends AppCompatActivity {
             }
         });
     }
+
+
+
+
+
+
+
 }
